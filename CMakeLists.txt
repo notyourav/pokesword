@@ -22,4 +22,7 @@ target_compile_options(pokesword PRIVATE -Wno-invalid-offsetof)
 add_subdirectory(lib/NintendoSDK)
 target_link_libraries(pokesword PUBLIC NintendoSDK)
 
-add_subdirectory(src)
+add_subdirectory(lib/gflib3)
+target_link_libraries(pokesword PUBLIC gflib3)
+
+add_subdirectory(prog)
