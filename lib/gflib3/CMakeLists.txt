@@ -1,7 +1,10 @@
 project(gflib3 CXX ASM)
 
 add_library(gflib3 OBJECT
+  include/core/engine/count_object.h
   include/core/engine/memory_object.h
+  include/core/engine/object_handle.h
+  include/mem/manager.h
 
   include/mem/memory_resource.h
   src/mem/memory_resource.cpp
