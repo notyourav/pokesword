@@ -25,7 +25,7 @@ class IObjectHandler : IReferenceObject {};
 class IObject : IObjectHandler, IReflectionObject {};
 
 template <class T>
-class Object : MemoryObject : IObject : T {
+class Object : MemoryObject , IObject , T {
     ObjectHandle<IReflectionObject> m_handle;
 };
 
